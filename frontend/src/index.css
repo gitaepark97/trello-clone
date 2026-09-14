@@ -1,0 +1,59 @@
+:root {
+  --text: #172b4d;
+  --text-muted: #5e6c84;
+  --bg: #f4f5f7;
+  --surface: #ffffff;
+  --border: #dfe1e6;
+  --accent: #0052cc;
+  --accent-hover: #0747a6;
+  --danger: #de350b;
+  --danger-hover: #bf2600;
+  --shadow: rgba(9, 30, 66, 0.25) 0 1px 2px, rgba(9, 30, 66, 0.13) 0 0 1px;
+
+  font: 15px/150% system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e6edf7;
+    --text-muted: #9fadc2;
+    --bg: #0f172a;
+    --surface: #1b2436;
+    --border: #2c3752;
+    --accent: #4c9aff;
+    --accent-hover: #79b8ff;
+    --danger: #ff6b52;
+    --danger-hover: #ff8a75;
+    --shadow: rgba(0, 0, 0, 0.4) 0 1px 2px, rgba(0, 0, 0, 0.25) 0 0 1px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
