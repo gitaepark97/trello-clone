@@ -1,0 +1,1 @@
+-- Baseline migration. Intentionally empty; confirms Flyway is wired up correctly.

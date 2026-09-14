@@ -1,0 +1,10 @@
+CREATE TABLE list (
+    id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    board_id BIGINT NOT NULL REFERENCES board (id) ON DELETE CASCADE,
+    title VARCHAR(255) NOT NULL,
+    position DOUBLE PRECISION NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT now(),
+    updated_at TIMESTAMP NOT NULL DEFAULT now()
+);
+
+CREATE INDEX idx_list_board_id ON list (board_id);
